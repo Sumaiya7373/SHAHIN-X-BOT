@@ -1,4 +1,4 @@
-const axios = require("axios");
+ const axios = require("axios");
 
 module.exports = {
   config: {
@@ -22,13 +22,13 @@ module.exports = {
     const globalPrefix = global.config.PREFIX;
 
     const mergedCategories = {
-      "⚙️ System": ["Administration", "Admin", "Owner", "Bot Management", "System"],
-      "🧠 AI & Chat": ["AI", "AI Chat"],
-      "🎬 Media": ["Media", "Video", "Image"],
-      "🧰 Utilities": ["Utility", "Utilities", "System"],
-      "👥 Group": ["Group Management", "group"],
-      "🎮 Fun": ["Fun", "Games", "greetings"],
-      "🛰️ Tools": ["Tools", "Information"]
+      "⚙️ 𝐒ʏꜱᴛᴇᴍ": ["Administration", "Admin", "Owner", "Bot Management", "System"],
+      "🧠 𝐀ɪ & 𝐂ʜᴀᴛ": ["AI", "AI Chat"],
+      "🎬 𝐌ᴇᴅɪᴀ": ["Media", "Video", "Image"],
+      "🧰 𝐔ᴛɪʟɪᴛɪᴇꜱ": ["Utility", "Utilities", "System"],
+      "👥 𝐆ʀᴏᴜᴘ": ["Group Management", "group"],
+      "🎮 𝐅ᴜɴ": ["Fun", "Games", "greetings"],
+      "🛰️ 𝐓ᴏᴏʟꜱ": ["Tools", "Information"]
     };
 
     const categories = {};
@@ -90,17 +90,17 @@ module.exports = {
     });
     // ───── MAIN HELP MENU ─────
     let responseText = `
-╭─❖  𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗠𝗘𝗡𝗨  ❖─╮
-│ 💎 𝘽𝙤𝙩: ${global.config.botName || "EMon System"}
-│ 👑 Owner: ${global.config.botOwner || "Mohammad Nayan"}
-│ 🌍 Global Prefix: \`${globalPrefix}\`
-│ 👥 Group Prefix: \`${prefix || "Not set (using global)"}\`
-│ 🧩 Version: ${pkg.version}
-│ 🕒 Time: ${currentTime}
-│ 📅 Date: ${currentDate}
-│ 🌐 Timezone: ${timezone}
-│ 📜 Total Commands: ${commands.length}
-│──────────────────────`;
+╭┈──〔 𓆩ု᪳𝐒𝐇𝐀𝐇𝐈𝐍-ှ᪳𓆪* *〕┈──⊷
+│ 💎 𝐁ᴏᴛ: ${global.config.botName || "𝐒ʜᴀʜɪɴ 𝐁ᴏᴛ "}
+│ 👑 𝐎ᴡɴᴇʀ: ${global.config.botOwner || "⎯͢✧🌷𝐒ʜᴀʜɪɴ 𝐑ᴀɴᴀꫝᥫ᭡ 🐱"}
+│ 🌍 𝐆ʟᴏʙᴀʟ 𝐏ʀᴇғɪ𝚇: \`${globalPrefix}\`
+│ 👥 𝐆ʀᴏᴜᴘ 𝐏ʀᴇғɪ𝚇: \`${prefix || "Not set (using global)"}\`
+│ 🧩 𝐕ᴇʀꜱɪᴏɴ: ${pkg.version}
+│ 🕒 𝐓ɪᴍᴇ: ${currentTime}
+│ 📅 𝐃ᴀᴛᴇ: ${currentDate}
+│ 🌐 𝐓ɪᴍᴇᴢᴏɴᴇ: ${timezone}
+│ 📜 𝐓ᴏᴛᴀʟ 𝐂ᴏᴍᴍᴀɴᴅꜱ: ${commands.length}
+│─────────────────────⊷`;
 
     for (const category in categories) {
       const cmds = categories[category]
@@ -124,3 +124,6 @@ module.exports = {
     }
   },
 };
+
+
+    
