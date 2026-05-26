@@ -1,21 +1,21 @@
 {
-  "packname": "𝐗-𝐒ʜꫝʜɪɴ🌷",
+  "packname": "My Sticker Pack",
   "author": "My Bot",
-  "botName": "⎯͢✧𝐒ʜᴀʜɪɴ 𝐁ᴏᴛᥫ᭡",
-  "botOwner": "⎯͢✧🫣 𝐒ʜᴀʜɪɴ 𝐑ᴀɴᴀꫝᥫ᭡ 🐱",
+  "botName": "Shahin Bot",
+  "botOwner": "Shahin Rana",
   "autoUpdate": true,
   "runMsg": false,
   "ownerNumber": "8801742564047",
-  "botNumber": "bot number",
+  "botNumber": "8801742564047",
   "botUid": "bot uid",
   "PREFIX": "/",
-  "timeZone": "𝐀sɪᴀ/𝐃ʜᴀᴋᴀ",
+  "timeZone": "Asia/Dhaka",
   "admin": [
     "your number",
     "your id"
   ],
-  "helpPic": "https://i.postimg.cc/prBWXPsY/file-000000001dac71fa926c760bcb23c817.png",
-  "welPic": "https://i.postimg.cc/C5VFCRZx/file-00000000577871f8ba603d9ed041e286.png",
+  "helpPic": "https://i.postimg.cc/pV7xByGv/IMG-20250106-WA0007.png",
+  "welPic": "https://i.postimg.cc/3JQF0qWf/received-383729254132460.jpg",
   "PORT": "3000",
   "delay": 100,
   "msg": {
