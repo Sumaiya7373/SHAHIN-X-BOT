@@ -1,26 +1,26 @@
 module.exports = function () {
-  return `${global.config.botName} CONNECTED«
+  return `${global.config.botName} 𝐂ᴏɴɴᴇᴄᴛᴇᴅ«
 
-Assalamualaykum☘️
+⎯͢✧🌷 𝐀ꜱꜱᴀʟᴀᴍᴜᴀʟᴀɪᴋᴜᴍᥫ᭡🍁
 <------------------------------>
-BOT CONNECTED SUCCESSFUL !!!
+⎯͢✧🌷 𝐁ᴏᴛ 𝐂ᴏɴɴᴇᴄᴛᴇᴅ 𝐒ᴜᴄᴄᴇssғᴜʟ ✔️ !!!
 
-APPROVAL ALLOW IN THIS GROUP!!!
+⎯͢✧🌷 𝐀ᴘᴘʀᴏᴠᴀʟ 𝐀ʟʟᴏᴡ 𝐈ɴ 𝐓ʜɪs 𝐆ʀᴏᴜᴘᥫ᭡ 🐱!!!
 <------------------------------>
 
-TO VIEW ANY COMMAND Use👉 ${global.config.PREFIX}help
-See command👉 ${global.config.PREFIX}menu
+⎯͢✧🌷 𝐓ᴏ 𝐕ɪᴇᴡ 𝐀ɴʏ 𝐂ᴏᴍᴍᴀɴᴅ 𝐔sᴇ👉 ${global.config.PREFIX}help
+⎯͢✧🌷 𝐒ᴇᴇ 𝐂ᴏᴍᴍᴀɴᴅ👉 ${global.config.PREFIX}menu
 
-EXAMPLE:👇
+⎯͢✧🌷 𝐄xᴀᴍᴘʟᴇ:👇
 ${global.config.PREFIX}admin (information)
 ${global.config.PREFIX}info (admin info)
 ${global.config.PREFIX}alldown (link)
 
 <------------------------------>
 
-AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
+⎯͢✧🌷 𝐀ɴᴅ 𝐅ᴏʀ 𝐀ɴʏ 𝐂ᴏᴍᴘʟᴀɪɴᴛs 𝐎ʀ 𝐂ᴏɴᴛᴀᴄᴛ 𝐁ᴏᴛ 𝐎ᴘᴇʀᴀᴛᴏʀᥫ᭡ 
 
-DEVELOPER: ${global.config.botOwner}
+⎯͢✧🌷 𝐃ᴇᴠᴇʟᴏᴘᴇʀ: ${global.config.botOwner}
 
-🔵WHATSAPP NUMBER: wa.me/+${global.config.admin[0] || "8801615298449"}`;
+⎯͢✧🌷 𝐖ʜᴀᴛsᴀᴘᴘ 𝐍ᴜᴍʙᴇʀ: wa.me/+${global.config.admin[0] || "8801615298449"}`;
 };
