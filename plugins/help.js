@@ -76,8 +76,8 @@ module.exports = {
 // ───── MAIN HELP MENU ─────
 let responseText = `
 *╭━♡┅♡┅♡┅♡┅♡┅♡┅╮*
-*┃•✓🤖 Bot : ${global.config.botName || "EMon System"}*
-*┃•✓👑 Owner : ${global.config.botOwner || "Mohammad Nayan"}*
+*┃•✓🤖 Bot : ${global.config.botName || "Mr Shahin "}*
+*┃•✓👑 Owner : ${global.config.botOwner || "Shahin Rana"}*
 *┃•✓🌍 Global Prefix : ${globalPrefix}*
 *┃•✓👥 Group Prefix : ${prefix || globalPrefix}*
 *┃•✓🕒 Time : ${currentTime}*
