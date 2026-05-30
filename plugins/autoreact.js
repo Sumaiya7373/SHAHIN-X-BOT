@@ -16,13 +16,13 @@ module.exports = {
 
     if (status === 'on') {
       await global.data.set('autoreact.json', { [threadId]: true });
-      await api.sendMessage(threadId, { text: '✨ Autoreact is now ON for this thread 💖' });
+      await api.sendMessage(threadId, { text: '✅𝐀ᴜᴛᴏʀᴇᴀᴄᴛ 𝐢𝐬 𝐧𝐨𝐰 `𝐎𝐍` 𝐟𝐨𝐫 𝐭𝐡𝐢𝐬 𝐭𝐡𝐫𝐞𝐚𝐝 💖✨' });
 
     } else if (status === 'off') {
       const data = await global.data.get('autoreact.json') || {};
       delete data[threadId];
       await global.data.set('autoreact.json', data);
-      await api.sendMessage(threadId, { text: '💔 Autoreact is now OFF for this thread' });
+      await api.sendMessage(threadId, { text: '❌𝐀ᴜᴛᴏʀᴇᴀᴄᴛ 𝐢𝐬 𝐧𝐨𝐰 `𝐎𝐅𝐅` 𝐟𝐨𝐫 𝐭𝐡𝐢𝐬 𝐭𝐡𝐫𝐞ᴀ𝐝 💔✨' });
 
     } else {
       await api.sendMessage(threadId, { text: 'Usage: autoreact [on/off]' });
