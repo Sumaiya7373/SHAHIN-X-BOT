@@ -73,39 +73,7 @@ module.exports = {
       timeZone: timezone,
       hour12: true,
     });
-// ───── MAIN HELP MENU ─────
-let responseText = `
-*╭━♡┅♡┅♡┅♡┅♡┅♡┅╮*
-*┃•✓🤖 Bot : ${global.config.botName || "Mr Shahin "}*
-*┃•✓👑 Owner : ${global.config.botOwner || "Shahin Rana"}*
-*┃•✓🌍 Global Prefix : ${globalPrefix}*
-*┃•✓👥 Group Prefix : ${prefix || globalPrefix}*
-*┃•✓🕒 Time : ${currentTime}*
-*┃•✓📅 Date : ${currentDate}*
-*┃•✓📜 Commands : ${commands.length}*
-*┃•✓💻 Version : ${pkg.version}*
-*╰━♡┅♡┅♡┅♡┅♡┅♡┅╯*`;
 
-for (const category in categories) {
-    const cmds = categories[category]
-        .map(cmd => `*┃•✓⚡ ${prefix}${cmd.name}*`)
-        .join("\n");
-
-    responseText += `
-
-*╭━♡┅♡┅♡┅♡┅♡┅♡┅╮*
-*┃•✓${category}*
-*┣━━━━━━━━━━━━━━━━━*
-${cmds}
-*╰━♡┅♡┅♡┅♡┅♡┅♡┅╯*`;
-}
-
-responseText += `
-
-*╭━♡┅♡┅♡┅♡┅♡┅♡┅╮*
-*┃•✓👑 ᴘᴏᴡᴇʀᴇᴅ ʙʏ*
-*┃•✓💖 sʜᴀʜɪɴ ʀᴀɴᴀ 🙂*
-*╰━♡┅♡┅♡┅♡┅♡┅♡┅╯*`;
     const currentTime = new Date().toLocaleTimeString("en-US", {
       timeZone: timezone,
       hour: "2-digit",
@@ -120,8 +88,38 @@ responseText += `
       month: "2-digit",
       year: "numeric"
     });
+    // ───── MAIN HELP MENU ─────
+    let responseText = `
+╭─❖  𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗠𝗘𝗡𝗨  ❖─╮
+│ 💎 𝘽𝙤𝙩: ${global.config.botName || "EMon System"}
+│ 👑 Owner: ${global.config.botOwner || "Mohammad Nayan"}
+│ 🌍 Global Prefix: \`${globalPrefix}\`
+│ 👥 Group Prefix: \`${prefix || "Not set (using global)"}\`
+│ 🧩 Version: ${pkg.version}
+│ 🕒 Time: ${currentTime}
+│ 📅 Date: ${currentDate}
+│ 🌐 Timezone: ${timezone}
+│ 📜 Total Commands: ${commands.length}
+│──────────────────────`;
 
-    
+    for (const category in categories) {
+
+    const cmds = categories[category]
+        .map(cmd => `⎯͢✧♡●➪ ${prefix}${fancyText(cmd.name)}`)
+        .join("\n");
+
+    responseText += `
+
+〔 ${category} 〕
+${cmds}
+`;
+}
+
+responseText += `
+
+⎯͢✧🌷 𝐗-𝐒ʜꫝʜɪɴ 𝐑ᴀɴꫝᥫ᭡`;
+      
+
     try {
       const response = await axios.get(global.config.helpPic, { responseType: 'stream' });
       await api.sendMessage(threadId, {
@@ -133,3 +131,4 @@ responseText += `
     }
   },
 };
+    
