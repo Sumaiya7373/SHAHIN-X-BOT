@@ -91,8 +91,8 @@ module.exports = {
     // ───── MAIN HELP MENU ─────
     let responseText = `
 ╭─❖  𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗠𝗘𝗡𝗨  ❖─╮
-│ 💎 𝘽𝙤𝙩: ${global.config.botName || "EMon System"}
-│ 👑 Owner: ${global.config.botOwner || "Mohammad Nayan"}
+│ 💎 𝘽𝙤𝙩: ${global.config.botName || "Shahin Rana"}
+│ 👑 Owner: ${global.config.botOwner || "Shahin Rana"}
 │ 🌍 Global Prefix: \`${globalPrefix}\`
 │ 👥 Group Prefix: \`${prefix || "Not set (using global)"}\`
 │ 🧩 Version: ${pkg.version}
